@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тимур Сибогатов | Бизнес • Искусство • Влияние</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #ff6a88, #ff9078, #f7d8a1, #72ddf7);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      overflow-x: hidden;
+      line-height: 1.8;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5em;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #ffeaa7;
+      margin-bottom: 30px;
+      animation: slideIn 1.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .hero-image {
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto 40px;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      transition: transform 0.5s, box-shadow 0.5s;
+      animation: popIn 1.2s ease-out;
+    }
+
+    .hero-image:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: left;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .content h3 {
+      font-size: 1.8em;
+      color: #ffeaa7;
+      margin: 25px 0 15px;
+      font-weight: 600;
+    }
+
+    .content p {
+      font-size: 1.15em;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      font-style: italic;
+      text-align: center;
+      padding: 30px;
+      margin: 40px 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      color: #ffffff;
+      border: 2px solid #ffeaa7;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 18px;
+      font-size: 1.8em;
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.4s;
+      font-weight: 700;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .social-links a:hover {
+      color: #fcb69f;
+      transform: translateY(-5px) scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 3em; }
+      h2 { font-size: 1.5em; }
+      .container { padding: 20px; }
+      .content { padding: 25px; }
+      .quote { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Тимур Сибогатов</h1>
+      <h2>Предприниматель • Актёр • Вдохновитель</h2>
+    </header>
+
+    <div class="hero-image">
+      <!-- Замените на путь к фото -->
+      <img src="image-cbe07c31-fc8f-42dd-866e-64d050defab9.png" alt="Тимур Сибогатов — харизма и стиль">
+    </div>
+
+    <div class="content">
+      <h3>О нём</h3>
+      <p>
+        Тимур Сибогатов — яркая звезда современной России, которая сияет сразу в нескольких сферах: бизнес, кино, мотивационные выступления и социальные инициативы. 
+        Его путь — это история о смелости, дисциплине и вере в себя.
+      </p>
+
+      <h3>Бизнес-лидер</h3>
+      <p>
+        Основатель успешных компаний в сфере технологий и недвижимости. 
+        Его проекты объединяют инновации и устойчивое развитие, принося реальную пользу тысячам людей.
+      </p>
+
+      <h3>Актёр и медиаперсона</h3>
+      <p>
+        Снялся в нескольких фильмах и сериалах, где играл сильных, харизматичных героев. 
+        Его образ стал символом нового поколения лидеров — умных, стильных и открытых миру.
+      </p>
+    </div>
+
+    <div class="quote">
+      «Не бойся быть ярким. Мир ждёт тех, кто осмелится выделиться.»
+    </div>
+
+    <div class="content">
+      <h3>Влияние</h3>
+      <p>
+        Тимур активно делится знаниями через YouTube, лекции и менторство. 
+        Он помогает молодым предпринимателям начать путь к успеху и верить в свои силы.
+      </p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://instagram.com/timur_sibogatov" target="_blank">Instagram</a>
+      <a href="https://t.me/timursibogatov" target="_blank">Telegram</a>
+      <a href="https://youtube.com/@timursibogatov" target="_blank">YouTube</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Тимур Сибогатов. Все права защищены.<br>
+      Дизайн: современно. Цвета: ярко. Вдохновение: бесконечно.
+    </footer>
+  </div>
+</body>
+</html>
+
